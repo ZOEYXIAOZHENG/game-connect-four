@@ -9,6 +9,7 @@
     var win = false;
 
     $(".b-turn").hide();
+    $(".a-turn").hide();
 
     $(".green").keypress(function (e) {
         if (e.which === 13) {
@@ -23,6 +24,7 @@
             playerTwo = $("input").val();
             $("#playerTwo").remove("input");
             $(".player2").append(playerTwo);
+            $(".a-turn").show();
         }
     });
 
