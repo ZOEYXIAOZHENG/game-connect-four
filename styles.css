@@ -15,6 +15,7 @@ body {
     align-items: center;
     background-color: #ff9500;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 header{
   position: fixed;

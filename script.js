@@ -188,9 +188,9 @@
     function checkForVictory(slots) {
         var count = 0;
         for (var i = 0; i < slots.length; i++) {
-            // console.log(slots.eq(i).hasClass(currPlayer));
+            
             if (slots.eq(i).hasClass(curPlayer)) {
-                // console.log("count", count);
+                
                 count++;
                 if (count === 4) {
                     return { win: true, winSlots: slots.slice(i - 3, i + 1) }; // win and find which four slots are connecting, they need to be highlight
